@@ -5,27 +5,27 @@
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 
-# plugin-dimension
+# macro-dimension
 
 A [freesewing](https://github.com/freesewing/freesewing) 
-plugin to add dimensions to your (paperless) patterns.
+macro to add dimensions to your (paperless) patterns.
 
 ## Install
 
-Install this plugin from NPM: 
+Install this macro from NPM: 
 
 ```sh
-npm install @freesewing/plugins-dimension --save
+npm install @freesewing/macro-dimension --save
 ```
 
-## Loading the plugin
+## Loading the macro
 
-To load this plugin, add it to your instantiated pattern:
+To load this macro, add it to your instantiated pattern:
 
 ```js
 import pattern from '@freesewing/pattern-brian'
 import theme from '@freesewing/plugin-theme'
-import dimension from '@freesewing/plugin-dimension'
+import dimension from '@freesewing/macro-dimension'
 
 pattern.with(theme).with(dimension);
 ```
@@ -47,7 +47,7 @@ macro('<name>', {<options>});
 
 ## Parameters
 
-As all freesewing plugins, all options needs to be passed as a single object.
+As all freesewing macros, all options needs to be passed as a single object.
 
 ### hd
 
@@ -109,7 +109,7 @@ As all freesewing macros, bundle these parameters into a single object.
 
 Below is an example of different dimensions.
 
-![Example of the dimension plugin](https://github.com/freesewing/plugin-dimension/raw/master/img/example.png)
+![Example of the dimension macro](https://github.com/freesewing/macro-dimension/raw/master/img/example.png)
 
 ## Where to get help
 

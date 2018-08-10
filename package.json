@@ -1,17 +1,17 @@
 {
-  "name": "@freesewing/plugin-dimension",
+  "name": "@freesewing/macro-dimension",
   "version": "0.3.0",
-  "description": "A freesewing plugin to add dimensions to your (paperless) pattern",
+  "description": "A freesewing macro to add dimensions to your (paperless) pattern",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/plugin-dimension#readme",
-  "repository": "github:freesewing/plugin-dimension",
+  "homepage": "https://github.com/freesewing/macro-dimension#readme",
+  "repository": "github:freesewing/macro-dimension",
   "bugs": {
-    "url": "https://github.com/freesewing/plugin-dimension/issues"
+    "url": "https://github.com/freesewing/macro-dimension/issues"
   },
   "keywords": [
     "freesewing",
-    "plugin",
+    "macro",
     "sewing",
     "patterns",
     "dimensions"
@@ -28,7 +28,7 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.dimension",
+    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.macros.dimension",
     "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
     "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
